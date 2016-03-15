@@ -1,0 +1,19 @@
+{
+    "name": "jesus/nuevatienda",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Jesus Velasquez",
+            "email": "jesus@mail.xom"
+        }
+    ],
+    "require": {
+        "slim/slim":"^3.0",
+        "illuminate/database": "5.*",
+        "slim/twig-view": "^2.0"
+    },
+    "require-dev": {
+        "filp/whoops": "2.0.0"
+    },
+    "minimum-stability": "stable"
+}

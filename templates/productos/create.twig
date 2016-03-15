@@ -1,0 +1,37 @@
+{% block title 'Inicio de sesión' %}
+
+{% block content %}
+<script type="text/javascript">
+//var url = "/sesion/";
+//var id = {{ producto.id_producto }};
+//var id_tienda = {{producto.id_tienda}};
+</script>
+<h4>Inicio de Sesion</h4>
+	<form action="/productos/" method="POST" >
+	<label>Descripcion</label>
+	<input type="text" id="descripcion" name='descripcion' value="">
+	<br>
+	<label>Observacion</label>
+	<input type="text" id="observacion" name='observacion' value="">
+	<br>
+	<label>Tipo</label>
+	<input type="text" id="id_tipo" name='id_tipo' value="">
+	<br>
+	<label>Tienda</label>
+	<input type="text" id="id_tienda" name='id_tienda' value="">
+	<br>
+	<label>Precio venta</label>
+	<input type="text" id="precio_venta" name='precio_venta' value="">
+	<br>
+	<label>Cantidad</label>
+	<input type="text" id="cantidad" name='cantidad' value="">
+	<br>
+	<label>Fecha de inicio</label>
+	<input type="text" id="fecha_inicial" name='fecha_inicial' value="">
+	<br>
+	<label>Fecha Final</label>
+	<input type="text" id="fecha_final" name='fecha_final' value="">
+	<br>
+	<input type="submit" value="Aceptar" >
+</form>
+{% endblock %}

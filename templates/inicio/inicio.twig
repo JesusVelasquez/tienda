@@ -1,0 +1,21 @@
+{% block title 'Inicio de sesión' %}
+
+{% block content %}
+<script type="text/javascript">
+var url = "/sesion/";
+//var id = {{ producto.id_producto }};
+//var id_tienda = {{producto.id_tienda}};
+</script>
+<h4>Inicio de Sesion</h4>
+	<form action="/sesion/" method="GET" >
+	<label>Id Usuario</label>
+	<input type="text" id="id_trabajador" name='id_trabajador' value="">
+	<br>
+	<label>Contraseña</label>
+	<input type="password" id="contraseña" name='contraseña' value="" title="Ingrese contraseña" required />
+	<br>
+	<input type="submit" value="Procesar" >
+</form>
+{% endblock %}
+
+

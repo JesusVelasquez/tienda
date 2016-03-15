@@ -1,0 +1,54 @@
+{% extends 'layout.twig' %}
+
+{% block title 'Productos' %}
+
+{% block content %}
+<script type="text/javascript">
+	{% autoescape false%}
+		var productos = {{ productos }}
+	{% endautoescape %}
+</script>
+<h4>Tabla de productos {{ nombre }}</h4>
+<div class="col-sm-12">
+<div class="table-responsive">
+<table class= "table table-hovere" >
+	<thead> 
+	<tr>
+		<th>Id</th>
+		<th>Descripcion</th>
+		<th>Observacion</th>
+		<th>Id tipo</th>
+		<th>Precio venta</th>
+		<th>Cantidad</th>
+		<th>Fecha Inicial</th>
+		<th>Fecha Final</th>
+		<th>Fecha Alta</th>
+		<th>Tienda</th>
+		<th>Acciones</th>
+	</tr>
+	{% for producto in productos %}
+	<tr>
+		<td>{{ producto.id_producto }}</td>
+		<td>{{ producto.descripcion }}</td>
+		<td>{{ producto.observacion }}</td>
+		<td>{{ producto.id_tipo }}</td>
+		<td>{{ producto.precio_venta }}</td>
+		<td>{{ producto.cantidad }}</td>
+		<td>{{ producto.fecha_inicial }}</td>
+		<td>{{ producto.fecha_final }}</td>
+		<td>{{ producto.fecha_alta }}</td>
+		<td>{{ producto.id_tienda }}</td>
+
+		<td><a href="/productos/{{producto.id_producto}}/almacenes/{{producto.id_tienda}}/">Modificar</a></td>
+
+	</tr>
+	{% endfor %}
+
+	</thead>
+      <tbody id="body">
+      	
+      </tbody>
+</table>
+</div>
+</div>
+{% endblock %}

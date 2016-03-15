@@ -1,0 +1,11 @@
+>Modelo y controlador
+
+>en el controlador un van 4 metodos
+	- singup #darte de alta (solo administrador) (encriptar el password)
+	- changePassword #el trabajador 
+	- singin # checka las credenciales y cea una session (con el  $trabajador )
+	- singout #destruye la session
+
+> crear las 4 vistas
+
+>creas un middleware (before)
